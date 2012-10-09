@@ -47,7 +47,7 @@ class Module
     {
         return array(
             'factories' => array(
-                'SpiffySecurity\View\Helper\IsGranted' => function($sm) {
+                'IsGranted' => function($sm) {
                     $sl = $sm->getServiceLocator();
                     return new \SpiffySecurity\View\Helper\IsGranted(
                         $sl->get('SpiffySecurity\Service\Security')
